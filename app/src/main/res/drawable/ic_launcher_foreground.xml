@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Breach beam rising through the gap in the line -->
+    <path android:pathData="M48,70 L60,70 L57,30 L51,30 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="54" android:startY="70" android:endX="54" android:endY="30">
+                <item android:offset="0.0" android:color="#0044F0C8" />
+                <item android:offset="1.0" android:color="#8044F0C8" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Defensive line: dim stones with a gap in the middle -->
+    <path android:fillColor="#FF3A4C6B" android:pathData="M24,66 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0" />
+    <path android:fillColor="#FF3A4C6B" android:pathData="M39,66 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0" />
+    <path android:fillColor="#FF3A4C6B" android:pathData="M71,66 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0" />
+    <path android:fillColor="#FF3A4C6B" android:pathData="M86,66 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0" />
+
+    <!-- Trailing attackers below the line -->
+    <path android:fillColor="#FF5C74A0" android:pathData="M42,88 m-8,0 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0" />
+    <path android:fillColor="#FF5C74A0" android:pathData="M68,88 m-8,0 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0" />
+
+    <!-- The breakthrough piece: bright, past the line, chevron pointing on -->
+    <path android:pathData="M54,32 m-14,0 a14,14 0 1,0 28,0 a14,14 0 1,0 -28,0">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="radial" android:centerX="50" android:centerY="28" android:gradientRadius="20">
+                <item android:offset="0.0" android:color="#FFCafff0" />
+                <item android:offset="0.55" android:color="#FF33E0C0" />
+                <item android:offset="1.0" android:color="#FF128F78" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:strokeColor="#FFFFFFFF" android:strokeWidth="3.4" android:fillColor="#00000000"
+        android:strokeLineCap="round" android:strokeLineJoin="round"
+        android:pathData="M46,36 L54,25 L62,36" />
+</vector>
